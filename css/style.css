@@ -330,6 +330,7 @@ section {
 .input-c {
   background-color: rgba(0,0,0,0.3);
 }
+/*--CV indirme,Ödev Bilgileri ve Ödev Raporu için kullanılan buton--*/
 .btn-transparent {
   background-color: rgba(63, 71, 71, 0.38);
   border: 1px solid rgba(0, 0, 0, 0.28);
