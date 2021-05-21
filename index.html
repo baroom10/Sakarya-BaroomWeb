@@ -1,4 +1,4 @@
-﻿<!-- Neredeyse kullandığım tüm kodları belirlemek için bu şekilde yorumlar yazdım (Login hariç(bkz.226))-->
+<!-- Neredeyse kullandığım tüm kodları belirlemek için bu şekilde yorumlar yazdım-->
 
 
 <!doctype html>
@@ -16,6 +16,8 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/animate.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/giris-style.css" />
+		
 	   <!-- Üst İkon için bağlantı kodu -->
 	        <link rel="shortcut icon" href="img/favicon.ico"/>
 
@@ -43,7 +45,7 @@
 										<a class="nav-link" href="#portfolio">Memlektim</a>
 									</li>
 									<li class="nav-item">
-											<a class="nav-link" href="#login">Giriş Yap</a>
+							            			<a class="nav-link" href="#login">Giriş Yap</a>
 									</li>
 								</ul>
 							</div>
@@ -224,30 +226,64 @@
 					</div>
 				</section>
 
-				 <!-- LOGİN VE KAYIT AMA HENÜZ BİTİK DEĞİL (3.Projeye kadar tamamlayacağım ve artı olarak php üzerinde tam bir giriş ve kayıt sistemi yapacağım İnşallah) bence burayı boşverin-->
+				 <!-- LOGİN VE KAYIT-->
 
 				<section id="login" class="statblock hire-me text-center cover-bg" data-image-src="img/contact-bg.jpg" data-overlay="7" style="background-image: url(img/contact-bg.jpg)">	
 					<div class="row">
 						<div class="col-1">
-							<div class="form-box">
-								<div class="form">
-									<form class="login-form">
-										<center><h1 class="main-heading">Giriş Bilgileri</h1></center>
-										<input type="username"placeholder="Kullanıcı adı"/>
-										<input type="password"placeholder="Şifre"/>
-										<button>Giriş Yap</button>
-										<p class="message">Kayıtlı değil misin? <a href="register-form">Kaydol</a></p>
-									</form>
-									<form class="register-form">
-										<center><h1 class="main-heading">Kayıt Bilgileri</h1></center>
-										<input type="username" placeholder="Kullanıcı Adı"/>
-										<input type="text" placeholder="email"/>
-										<input type="password" placeholder="Şifre"/>
-										<button>Kaydol</button>
-										<p class="message">Kayıtlı mısın?<a href="#">Giriş Yap</a>
-										</p>
-									</form>
-								 </div>
+							<div class="login-wrap">
+								<div class="login-html">
+									<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+									<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+									<div class="login-form">
+										<div class="sign-in-htm">
+											<div class="group">
+												<label for="user" class="label">Username</label>
+												<input id="user" type="text" class="input">
+											</div>
+											<div class="group">
+												<label for="pass" class="label">Password</label>
+												<input id="pass" type="password" class="input" data-type="password">
+											</div>
+											<div class="group">
+												<input id="check" type="checkbox" class="check" checked>
+												<label for="check"><span class="icon"></span> Keep me Signed in</label>
+											</div>
+											<div class="group">
+												<input type="submit" class="button" value="Sign In">
+											</div>
+											<div class="hr"></div>
+											<div class="foot-lnk">
+												<a href="#forgot">Forgot Password?</a>
+											</div>
+										</div>
+										<div class="sign-up-htm">
+											<div class="group">
+												<label for="user" class="label">Username</label>
+												<input id="user" type="text" class="input">
+											</div>
+											<div class="group">
+												<label for="pass" class="label">Password</label>
+												<input id="pass" type="password" class="input" data-type="password">
+											</div>
+											<div class="group">
+												<label for="pass" class="label">Repeat Password</label>
+												<input id="pass" type="password" class="input" data-type="password">
+											</div>
+											<div class="group">
+												<label for="pass" class="label">Email Address</label>
+												<input id="pass" type="text" class="input">
+											</div>
+											<div class="group">
+												<input type="submit" class="button" value="Sign Up">
+											</div>
+											<div class="hr"></div>
+											<div class="foot-lnk">
+												<label for="tab-1">Already Member?</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-1">
